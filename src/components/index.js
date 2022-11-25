@@ -1,5 +1,4 @@
 import VideoAndAudioCall from './VideoAndAudioCall/index'
-import VideoAndAudioCallMini from './VideoAndAudioCall/minimize/index.vue'
 
 export default {
   install: (app, options) => {
@@ -9,6 +8,5 @@ export default {
      * 3. 向 app.config.globalProperties 中添加一些全局实例属性或方法
      */
     app.component('video-and-audio-call', VideoAndAudioCall)
-    app.component('video-and-audio-call-mini', VideoAndAudioCallMini)
   }
 }

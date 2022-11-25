@@ -1,14 +1,14 @@
 <template>
-  <div class="wrap--video-and-audio-call minimize">
+  <div :class="`wrap--video-and-audio-call ${osize}`">
     <section class="container--action">
-      <div class="icon">
+      <div class="icon" v-if="osize === 'fullscreen'" @click="miniFn">
         <el-tooltip content="最小化">
           <el-icon color="#fff">
             <Minus />
           </el-icon>
         </el-tooltip>
       </div>
-      <div class="icon">
+      <div class="icon" v-if="osize === 'minimize'" @click="fullscreenFn">
         <el-tooltip content="全屏">
           <el-icon color="#fff">
             <FullScreen />
@@ -24,8 +24,20 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { Minus, FullScreen } from '@element-plus/icons-vue'
-import VideoItem from './video/called.vue'
+import VideoItem from './source/called.vue'
+
+const osize = ref('fullscreen')
+const left_mini = ref(0)
+const top_mini = ref(0)
+
+const miniFn = () => {
+
+}
+const fullscreenFn = () => {
+
+}
 </script>
 
 <style lang="scss" scoped>
