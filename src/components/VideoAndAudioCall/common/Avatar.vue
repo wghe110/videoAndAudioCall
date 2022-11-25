@@ -1,7 +1,8 @@
 <template>
   <section class="wrap--avatar">
-    <img src="@public/demo.jpeg" alt="头像" class="avatar">
+    <img src="@public/avatar--default.png" alt="头像" class="avatar">
     <h2 class="uname">张三</h2>
+    <p class="subname">某个网格员</p>
   </section>
 </template>
 
@@ -22,6 +23,13 @@
     color: #fff;
     font-size: 20px;
     line-height: 1.4;
+    margin-bottom: 14px;
+  }
+
+  >.subname {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
   }
 }
 </style>

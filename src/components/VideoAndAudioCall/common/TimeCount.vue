@@ -10,6 +10,7 @@
   left: 50%;
   top: 4%;
   transform: translateX(-50%);
+  z-index: 17;
 
   >span {
     color: #fff;

@@ -1,6 +1,6 @@
 <template>
   <section class="wrap-bg">
-    <img src="@public/demo.jpeg" alt="头像背景" class="bg">
+    <img src="@public/avatar--default.png" alt="头像背景" class="bg">
   </section>
 </template>
 
